@@ -1,4 +1,4 @@
 #!/bin/sh
 
-dotnet restore /root/app
-dotnet run -p /root/app
+dotnet restore /app
+dotnet run -p /app --server.urls http://0.0.0.0:5000
