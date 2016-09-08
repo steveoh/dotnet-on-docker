@@ -1,0 +1,12 @@
+version: "2"
+
+services:
+    webapp:
+        container_name: "dotnet"
+        image: "microsoft/dotnet:latest"
+        ports:
+            - "127.0.0.1:5000:5000"
+        volumes: 
+            - "./:/root/app"
+        entrypoint:
+            - /root/app/startup.sh
